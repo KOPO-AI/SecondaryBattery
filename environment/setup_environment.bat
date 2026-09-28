@@ -62,6 +62,12 @@ echo   [3/5] 'sbai' [Python 3.12 + ipykernel] 가상환경 확인 및 생성
 echo ======================================================================
 echo.
 
+:: 최신 Conda 약관(ToS) 자동 동의 처리
+call "%CONDA_BAT%" tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main >nul 2>nul
+call "%CONDA_BAT%" tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r >nul 2>nul
+call "%CONDA_BAT%" tos accept --override-channels --channel https://repo.anaconda.com/pkgs/msys2 >nul 2>nul
+call "%CONDA_BAT%" tos accept --all >nul 2>nul
+
 call "%CONDA_BAT%" env list > "%TEMP%\conda_envs.txt" 2>nul
 findstr /b /c:"sbai " "%TEMP%\conda_envs.txt" >nul 2>nul
 if %errorlevel% equ 0 (
@@ -72,10 +78,14 @@ if %errorlevel% equ 0 (
     echo [생성] 'sbai' Python 3.12 및 ipykernel 가상환경을 생성합니다...
     call "%CONDA_BAT%" create -y -n sbai python=3.12 ipykernel
     if !errorlevel! neq 0 (
-        echo [오류] 가상환경 생성 중 오류가 발생했습니다.
-        del "%TEMP%\conda_envs.txt" 2>nul
-        pause
-        exit /b 1
+        echo [재시도] conda-forge 채널을 이용하여 가상환경 생성을 재시도합니다...
+        call "%CONDA_BAT%" create -y -n sbai -c conda-forge python=3.12 ipykernel
+        if !errorlevel! neq 0 (
+            echo [오류] 가상환경 생성 중 오류가 발생했습니다.
+            del "%TEMP%\conda_envs.txt" 2>nul
+            pause
+            exit /b 1
+        )
     )
 )
 del "%TEMP%\conda_envs.txt" 2>nul
