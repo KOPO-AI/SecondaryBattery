@@ -1,0 +1,19 @@
+﻿column,dtype,unit,description
+cell_id,int,-,복원된 셀 번호 1~14. Cycle_Index 가 감소(리셋)하는 지점을 셀 경계로 판단해 부여. 원본 CSV에는 없던 컬럼.
+cell_code,str,-,"원 HNEI 파일 letter(a,b,c,d,e,f,g,j,l,n,o,p,s,t) 추정 매핑. 원저자 join_dataframes.py 의 concat 순서 기반이며 CSV만으로는 검증 불가."
+Cycle_Index,float,회,충방전 사이클 번호. RUL 과 결정론적 관계(누수) — 모델 입력으로 쓰면 안 됨.
+Discharge Time (s),float,s,해당 사이클 방전 구간 소요 시간.
+Decrement 3.6-3.4V (s),float,s,방전 중 전압이 3.6V에서 3.4V로 내려가는 데 걸린 시간. 음수 24건 존재.
+Max. Voltage Dischar. (V),float,V,방전 구간 최대 전압. RUL 과 상관 +0.783 으로 가장 유용한 물리 특징.
+Min. Voltage Charg. (V),float,V,충전 구간 최소 전압. RUL 과 상관 -0.760.
+Time at 4.15V (s),float,s,충전 중 4.15V 도달 시각. 음수 9건 존재.
+Time constant current (s),float,s,CC(정전류) 충전 구간 지속 시간.
+Charging time (s),float,s,충전 전체 소요 시간(CC+CV).
+RUL,int,회,타깃. 원저자 정의 RUL = (해당 셀 마지막 Cycle_Index) - (현재 Cycle_Index).
+flag_neg_time,bool,-,시간 컬럼에 음수가 있는 행.
+flag_415_gt_charge,bool,-,Time at 4.15V > Charging time (충전 총시간보다 중간 시각이 큼).
+flag_dec_gt_discharge,bool,-,|Decrement 3.6-3.4V| > Discharge Time (부분 구간이 전체보다 김).
+flag_cc_gt_charge,bool,-,Time constant current > Charging time.
+is_valid,bool,-,위 4개 hard 플래그가 모두 False 인 행. battery_rul_clean.csv 는 True 행만 포함.
+flag_volt_over_spec,bool,-,Max. Voltage Dischar. > 4.2V (셀 충전 상한 초과 의심). 제거하지 않음.
+flag_minchg_gt_maxdis,bool,-,Min. Voltage Charg. > Max. Voltage Dischar. 인 역전 행. 제거하지 않음.

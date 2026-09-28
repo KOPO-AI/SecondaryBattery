@@ -1,0 +1,25 @@
+﻿태그명,설비,구분,설명,단위,최소,최대
+EC_M_MMF_SV,믹서,SV,메인 모터 고속 RPM 설정,rpm,0,3008
+EC_M_MMF_PV,믹서,PV,메인 모터 고속 RPM 현재값,rpm,0,3008
+EC_M_MMF_A_PV,믹서,PV,메인 모터 고속 전류,A,0,200
+EC_M_TPD_TEMP_PV,믹서,PV,탱크(PD) 온도 현재값,℃,-40,100
+EC_C_LINE_SPEED_SV,코팅,SV,코터 라인 속도 설정,m/min,0,100
+EC_C_LINE_SPEED_PV,코팅,PV,코터 라인 속도 현재값,m/min,0,100
+EC_C_DR1_TEMP_SV,코팅,SV,건조로 1구간 온도 설정,℃,0,200
+EC_C_DR1_TEMP_PV,코팅,PV,건조로 1구간 온도 현재값,℃,0,200
+EC_C_DR2_TEMP_SV,코팅,SV,건조로 2구간 온도 설정,℃,0,200
+EC_C_DR2_TEMP_PV,코팅,PV,건조로 2구간 온도 현재값,℃,0,200
+EC_C_DR3_TEMP_SV,코팅,SV,건조로 3구간 온도 설정,℃,0,200
+EC_C_DR3_TEMP_PV,코팅,PV,건조로 3구간 온도 현재값,℃,0,200
+EC_C_DR4_TEMP_SV,코팅,SV,건조로 4구간 온도 설정,℃,0,200
+EC_C_DR4_TEMP_PV,코팅,PV,건조로 4구간 온도 현재값,℃,0,200
+EC_C_UNWIN_TEN_SV,코팅,SV,언와인더 장력 설정,N,0,300
+EC_C_UNWIN_TEN_PV,코팅,PV,언와인더 장력 현재값,N,0,300
+EC_C_REWIN_TEN_SV,코팅,SV,리와인더 장력 설정,N,0,300
+EC_C_REWIN_TEN_PV,코팅,PV,리와인더 장력 현재값,N,0,300
+EC_P_DRIV_LINE_SPEED_PV,프레스,PV,프레스 라인 속도 현재값,m/min,0,100
+EC_P_UPPER_ROLL_TEMP_PV,프레스,PV,상부 롤 온도 현재값,℃,0,200
+EC_P_LOWER_ROLL_TEMP_PV,프레스,PV,하부 롤 온도 현재값,℃,0,200
+EC_P_UNWIN_TEN_PV,프레스,PV,프레스 언와인더 장력 현재값,N,0,300
+EC_N_금형횟수_현재값,노칭,PV,노칭 금형 타발 횟수 누적,회,0,9999999
+EC_N_금형횟수_경보_설정,노칭,SV,금형 교체 경보 횟수 설정,회,0,9999999

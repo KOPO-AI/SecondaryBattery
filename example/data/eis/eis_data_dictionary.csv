@@ -1,0 +1,45 @@
+﻿파일,컬럼명,자료형,단위,설명
+eis_long.csv,measure_id,문자열,-,EIS 측정 1회(셀 1개의 1회 스윕)의 원본 코드. 24종
+eis_long.csv,battery_id,문자열,-,셀 식별자 B02/B03/B05/B06. GroupKFold 의 groups 로 사용
+eis_long.csv,repeat_id,정수,-,"반복 회차(원본 번호). 셀마다 시작값이 다름(B02·B03=4~9, B05·B06=3~8)"
+eis_long.csv,soc,정수,%,충전 상태 10~100(10 간격). 예측 대상(target)
+eis_long.csv,frequency_id,정수,-,주파수 인덱스 0~13
+eis_long.csv,frequency_hz,실수,Hz,가진 주파수 0.05~1000
+eis_long.csv,z_real,실수,Ohm,임피던스 실수부 Re{Z}
+eis_long.csv,z_imag,실수,Ohm,임피던스 허수부 Im{Z} (본 데이터는 전 구간 음수)
+eis_long.csv,minus_z_imag,실수,Ohm,-Im{Z}. Nyquist 선도의 세로축
+eis_long.csv,z_mag,실수,Ohm,임피던스 크기 |Z|
+eis_long.csv,z_phase_deg,실수,deg,임피던스 위상각
+eis_wide.csv,sample_id,문자열,-,스펙트럼 1개의 고유 키. measure_id + SOC
+eis_wide.csv,measure_id,문자열,-,EIS 측정 1회(셀 1개의 1회 스윕)의 원본 코드. 24종
+eis_wide.csv,battery_id,문자열,-,셀 식별자 B02/B03/B05/B06. GroupKFold 의 groups 로 사용
+eis_wide.csv,repeat_id,정수,-,"반복 회차(원본 번호). 셀마다 시작값이 다름(B02·B03=4~9, B05·B06=3~8)"
+eis_wide.csv,soc,정수,%,충전 상태 10~100(10 간격). 예측 대상(target)
+eis_wide.csv,Zre_0.05Hz,실수,Ohm,0.05 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_0.1Hz,실수,Ohm,0.1 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_0.2Hz,실수,Ohm,0.2 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_0.4Hz,실수,Ohm,0.4 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_1Hz,실수,Ohm,1 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_2Hz,실수,Ohm,2 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_4Hz,실수,Ohm,4 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_10Hz,실수,Ohm,10 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_20Hz,실수,Ohm,20 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_40Hz,실수,Ohm,40 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_100Hz,실수,Ohm,100 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_200Hz,실수,Ohm,200 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_400Hz,실수,Ohm,400 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zre_1000Hz,실수,Ohm,1000 Hz 에서의 임피던스 실수부 Re{Z} (피처)
+eis_wide.csv,Zim_0.05Hz,실수,Ohm,0.05 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_0.1Hz,실수,Ohm,0.1 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_0.2Hz,실수,Ohm,0.2 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_0.4Hz,실수,Ohm,0.4 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_1Hz,실수,Ohm,1 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_2Hz,실수,Ohm,2 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_4Hz,실수,Ohm,4 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_10Hz,실수,Ohm,10 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_20Hz,실수,Ohm,20 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_40Hz,실수,Ohm,40 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_100Hz,실수,Ohm,100 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_200Hz,실수,Ohm,200 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_400Hz,실수,Ohm,400 Hz 에서의 임피던스 허수부 Im{Z} (피처)
+eis_wide.csv,Zim_1000Hz,실수,Ohm,1000 Hz 에서의 임피던스 허수부 Im{Z} (피처)

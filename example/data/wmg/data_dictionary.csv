@@ -1,0 +1,139 @@
+﻿file,column,role,unit,description_ko,source_label_en
+wmg_cells_54.csv,group,id,-,캘린더링 조건 번호 1~18 (Group 시트 번호 = 조건표 No),Group sheet no.
+wmg_cells_54.csv,electrode_id,id,-,전극 조건 ID. NEX_CAT_240_{L|H}_{롤온도}_{P|M|D},Electrode ID
+wmg_cells_54.csv,cell_id,id,-,하프셀 고유번호 (DDxxx). 총 54개,Cathode cell ID
+wmg_cells_54.csv,replicate,id,-,같은 조건 안의 반복 셀 번호 1~3,Group 시트 C/D/E열 순서
+wmg_cells_54.csv,coating_id,id,-,코팅 시트에서 잘라낸 디스크 위치 ID,Cathode coating ID
+wmg_cells_54.csv,coat_weight_level,X_design,-,"코팅중량 수준. L=저중량, H=고중량",Electrode ID에서 파생
+wmg_cells_54.csv,target_coat_weight_gsm,X_design,g/m2,"목표 코팅중량. L=122.48, H=182.73",Target coating weight (GSM)
+wmg_cells_54.csv,roll_temp_c,X_design,degC,캘린더링 롤 온도. 85 / 120 / 145,Roll temperature (oC)
+wmg_cells_54.csv,density_level,X_design,-,"목표밀도 수준. P=다공(porous), M=중간, D=치밀(dense)",Electrode ID에서 파생
+wmg_cells_54.csv,target_density_g_cm3,X_design,g/cm3,목표 전극 밀도. 2.7 / 2.95 / 3.2,Target density (g/cm3)
+wmg_cells_54.csv,target_porosity_pct,X_design,%,목표밀도로부터 계산한 목표 공극률. 39.44 / 33.83 / 28.22,Calculated target porosity (%)
+wmg_cells_54.csv,roll_gap_um,X_design,um,설정 롤 갭. 약 500um 심(shim) 2장 포함값. 390~495,Roll gap (um)- includes 2 shims of ~500 um
+wmg_cells_54.csv,n_passes,X_design,회,목표 밀도 도달까지 실제 통과 횟수 1~3 (결과이자 공정 조건),Number of passes
+wmg_cells_54.csv,coating_thickness_um,X_measured,um,해당 셀 디스크의 코팅 두께(집전체 제외),Coating thickness (um)
+wmg_cells_54.csv,coating_weight_gsm,X_measured,g/m2,해당 셀 디스크의 실측 코팅중량,Coating weight (g/m2)
+wmg_cells_54.csv,density_g_cm3,X_measured,g/cm3,해당 셀 디스크의 실측 전극 밀도,Density (g/cm3)
+wmg_cells_54.csv,porosity_pct,X_measured,%,해당 셀 디스크의 실측 공극률. 진밀도 4.458 g/cm3 기준,Porosity (%)
+wmg_cells_54.csv,area_cm2,X_measured,cm2,전극 디스크 면적. 전 셀 1.7195 고정,Area (cm2)
+wmg_cells_54.csv,active_mass_g,X_measured,g,활물질(NMC622) 질량. 그램당 용량 환산 기준,Active material mass (g)
+wmg_cells_54.csv,coating_mass_g,X_measured,g,코팅층 질량(전체질량 - Al박 질량),Coating mass (g)
+wmg_cells_54.csv,total_thickness_um,X_measured,um,코팅 + Al 집전체 총 두께,Total thickness (um)
+wmg_cells_54.csv,expected_capacity_mah,X_measured,mAh,활물질량 x 165 mAh/g 로 계산한 기대용량,Expected capacity (mAh)
+wmg_cells_54.csv,cal_tensile_strength_kpa,X_measured,kPa,캘린더링 후 전극 최대 인장강도(조건 단위 값),"Electrode max. tensile strength (kPa), Calendered"
+wmg_cells_54.csv,precal_tensile_strength_kpa,X_measured,kPa,"캘린더링 전 인장강도. 코팅중량 수준별 1개 값뿐(L=728.62, H=683.25)","Electrode max. tensile strength (kPa), Before"
+wmg_cells_54.csv,cal_grad_carbon,X_measured,%/%,캘린더링 후 두께방향 탄소 농도 구배 (SEM/EDS),Gradient in carbon (% %-1)
+wmg_cells_54.csv,cal_grad_fluorine,X_measured,%/%,캘린더링 후 두께방향 불소(바인더) 농도 구배 (SEM/EDS),Gradient in fluorine (% %-1)
+wmg_cells_54.csv,cal_moran_carbon,X_measured,-,"캘린더링 후 탄소 분포의 Moran's I (공간 자기상관, 0~1)",Moran I score in carbon
+wmg_cells_54.csv,cal_moran_fluorine,X_measured,-,캘린더링 후 불소 분포의 Moran's I,Moran I score in fluorine
+wmg_cells_54.csv,test_equipment,meta,-,충방전기 장비명(BCS1~BCS8). 조건과 교락 가능한 잡음인자,Testing equipment
+wmg_cells_54.csv,channel,meta,-,충방전기 채널 번호,Channel
+wmg_cells_54.csv,v_after_assembly_v,meta,V,셀 조립 직후 개회로 전압,V after assembly (V)
+wmg_cells_54.csv,cap_dis_c20_mah,y,mAh,C/20 화성(formation) 1회차 방전용량,"Capacity Discharge, At C/20"
+wmg_cells_54.csv,cap_dis_c5_mah,y,mAh,C/5 반복 6회차 방전용량(안정화된 기준값),"Capacity Discharge, At C/5- 6"
+wmg_cells_54.csv,cap_dis_c2_mah,y,mAh,C/2 방전용량 (충전은 항상 C/5),"Capacity Discharge, At C/2"
+wmg_cells_54.csv,cap_dis_1c_mah,y,mAh,1C 방전용량,"Capacity Discharge, At C"
+wmg_cells_54.csv,cap_dis_2c_mah,y,mAh,2C 방전용량,"Capacity Discharge, At 2C"
+wmg_cells_54.csv,cap_dis_5c_mah,y,mAh,5C 방전용량,"Capacity Discharge, At 5C"
+wmg_cells_54.csv,cap_dis_10c_mah,y,mAh,10C 방전용량. 일부 셀은 사실상 0 (레이트 시험 실패),"Capacity Discharge, At 10C"
+wmg_cells_54.csv,grav_dis_c20_mahg,y,mAh/g,C/20 그램당 방전용량 = cap_dis_c20_mah / active_mass_g,"Gravimetric Discharge Capacity, At C/20"
+wmg_cells_54.csv,grav_dis_c5_mahg,y,mAh/g,C/5 6회차 그램당 방전용량,"Gravimetric Discharge Capacity, At C/5- 6"
+wmg_cells_54.csv,grav_dis_c2_mahg,y,mAh/g,C/2 그램당 방전용량,"Gravimetric Discharge Capacity, At C/2"
+wmg_cells_54.csv,grav_dis_1c_mahg,y,mAh/g,1C 그램당 방전용량,"Gravimetric Discharge Capacity, At C"
+wmg_cells_54.csv,grav_dis_2c_mahg,y,mAh/g,2C 그램당 방전용량,"Gravimetric Discharge Capacity, At 2C"
+wmg_cells_54.csv,grav_dis_5c_mahg,y,mAh/g,5C 그램당 방전용량,"Gravimetric Discharge Capacity, At 5C"
+wmg_cells_54.csv,grav_dis_10c_mahg,y,mAh/g,10C 그램당 방전용량 (레이트 특성 핵심 지표),"Gravimetric Discharge Capacity, At 10C"
+wmg_cells_54.csv,rate_ratio_5c_over_0p2c,y,-,5C 용량 / 0.2C(=C/5) 용량 비. 레이트 유지율(0~1),Rate charge 5C:0.2C
+wmg_cells_54.csv,first_cycle_loss_pct,y,%,초기 비가역 용량 손실률,First cycle loss (%)
+wmg_cells_54.csv,asi_chg_soc90_ohmcm2,y,Ohm cm2,충전 중 상태분율 0.9 지점의 면적비저항,"ASI Charge (Ohm cm2), 0.9"
+wmg_cells_54.csv,asi_dis_soc90_ohmcm2,y,Ohm cm2,방전 중 상태분율 0.9 지점의 면적비저항,"ASI Discharge (Ohm cm2), 0.9"
+wmg_cells_54.csv,asi_chg_soc50_ohmcm2,y,Ohm cm2,충전 중 상태분율 0.5 지점의 면적비저항,"ASI Charge (Ohm cm2), 0.5"
+wmg_cells_54.csv,asi_dis_soc50_ohmcm2,y,Ohm cm2,방전 중 상태분율 0.5 지점의 면적비저항,"ASI Discharge (Ohm cm2), 0.5"
+wmg_cells_54.csv,asi_chg_soc20_ohmcm2,y,Ohm cm2,충전 중 상태분율 0.2 지점의 면적비저항,"ASI Charge (Ohm cm2), 0.2"
+wmg_cells_54.csv,asi_dis_soc20_ohmcm2,y,Ohm cm2,방전 중 상태분율 0.2 지점의 면적비저항,"ASI Discharge (Ohm cm2), 0.2"
+wmg_cells_54.csv,cyc_cap_c10_cycle0_mah,y,mAh,수명시험 0사이클(C/10) 방전용량,"Cycling, Capacity at C/10 (cycle 0)"
+wmg_cells_54.csv,cyc_cap_c2_cycle1_mah,y,mAh,수명시험 1사이클(C/2) 방전용량,"Cycling, Capacity at C/2 (cycle 1)"
+wmg_cells_54.csv,cyc_cap_c2_cycle50_mah,y,mAh,수명시험 50사이클(C/2) 방전용량,"Cycling, Capacity at C/2 (cycle 50)"
+wmg_cells_54.csv,cyc_cap_c10_cycle51_mah,y,mAh,수명시험 51사이클(C/10) 방전용량,"Cycling, Capacity at C/10 (cycle 51)"
+wmg_cells_54.csv,retention_50cyc_pct,y,%,50사이클 용량유지율 = cycle50 / cycle1 x 100,Cycling 파일 retention 블록 cycle 50
+wmg_conditions_18.csv,group,id,-,캘린더링 조건 번호 1~18 (Group 시트 번호 = 조건표 No),Group sheet no.
+wmg_conditions_18.csv,electrode_id,id,-,전극 조건 ID. NEX_CAT_240_{L|H}_{롤온도}_{P|M|D},Electrode ID
+wmg_conditions_18.csv,coat_weight_level,X_design,-,"코팅중량 수준. L=저중량, H=고중량",Electrode ID에서 파생
+wmg_conditions_18.csv,density_level,X_design,-,"목표밀도 수준. P=다공(porous), M=중간, D=치밀(dense)",Electrode ID에서 파생
+wmg_conditions_18.csv,target_coat_weight_gsm,X_design,g/m2,"목표 코팅중량. L=122.48, H=182.73",Target coating weight (GSM)
+wmg_conditions_18.csv,roll_temp_c,X_design,degC,캘린더링 롤 온도. 85 / 120 / 145,Roll temperature (oC)
+wmg_conditions_18.csv,target_density_g_cm3,X_design,g/cm3,목표 전극 밀도. 2.7 / 2.95 / 3.2,Target density (g/cm3)
+wmg_conditions_18.csv,target_porosity_pct,X_design,%,목표밀도로부터 계산한 목표 공극률. 39.44 / 33.83 / 28.22,Calculated target porosity (%)
+wmg_conditions_18.csv,calendering_date,meta,YYYY-MM-DD,캘린더링 실시일 (2021-10-15 / 10-18 / 10-27). 롤온도와 완전 교락,Calendering date
+wmg_conditions_18.csv,precal_thickness_sheet_um,X_measured,um,캘린더링 전 코팅 시트에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_thickness_discs_um,X_measured,um,캘린더링 전 펀칭한 디스크에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_coat_weight_gsm,X_measured,g/m2,캘린더링 전 디스크 실측 코팅중량 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_density_g_cm3,X_measured,g/cm3,캘린더링 전 디스크 실측 전극 밀도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_porosity_pct,X_measured,%,캘린더링 전 디스크 실측 공극률 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_tensile_strength_kpa,X_measured,kPa,캘린더링 전 전극 최대 인장강도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,semeds_performed,meta,-,SEM/EDS 분석 수행 여부. 전 조건 Y,SEM/EDS analysis performed (Y/N)
+wmg_conditions_18.csv,precal_grad_carbon,X_measured,%/%,캘린더링 전 두께방향 탄소 농도 구배 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_grad_fluorine,X_measured,%/%,캘린더링 전 두께방향 불소(바인더) 농도 구배 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_z11_carbon,X_measured,-,캘린더링 전 탄소 분포의 Z1-1 통계량 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_z11_fluorine,X_measured,-,캘린더링 전 불소 분포의 Z1-1 통계량 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_moran_carbon,X_measured,-,캘린더링 전 탄소 분포의 Moran's I 공간 자기상관 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_moran_fluorine,X_measured,-,캘린더링 전 불소 분포의 Moran's I 공간 자기상관 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,precal_cracks,X_measured,-,캘린더링 전 입자 균열 관찰 여부. 전 조건 N,"Observed cracks in particles (Y/N), Before"
+wmg_conditions_18.csv,roll_gap_um,X_design,um,설정 롤 갭. 약 500um 심(shim) 2장 포함값. 390~495,Roll gap (um)- includes 2 shims of ~500 um
+wmg_conditions_18.csv,n_passes,X_design,회,목표 밀도 도달까지 실제 통과 횟수 1~3 (결과이자 공정 조건),Number of passes
+wmg_conditions_18.csv,cal_thickness_sheet_um,X_measured,um,캘린더링 후 코팅 시트에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_thickness_discs_um,X_measured,um,캘린더링 후 펀칭한 디스크에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_coat_weight_gsm,X_measured,g/m2,캘린더링 후 디스크 실측 코팅중량 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_density_g_cm3,X_measured,g/cm3,캘린더링 후 디스크 실측 전극 밀도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_porosity_pct,X_measured,%,캘린더링 후 디스크 실측 공극률 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_tensile_strength_kpa,X_measured,kPa,캘린더링 후 전극 최대 인장강도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_grad_carbon,X_measured,%/%,캘린더링 후 두께방향 탄소 농도 구배 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_grad_fluorine,X_measured,%/%,캘린더링 후 두께방향 불소(바인더) 농도 구배 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_z11_carbon,X_measured,-,캘린더링 후 탄소 분포의 Z1-1 통계량 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_z11_fluorine,X_measured,-,캘린더링 후 불소 분포의 Z1-1 통계량 (SEM/EDS) (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_moran_carbon,X_measured,-,캘린더링 후 탄소 분포의 Moran's I 공간 자기상관 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_moran_fluorine,X_measured,-,캘린더링 후 불소 분포의 Moran's I 공간 자기상관 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,cal_cracks,y,-,캘린더링 후 입자 균열 관찰 여부. 전 조건 Y,"Observed cracks in particles (Y/N), Calendered"
+wmg_conditions_18.csv,sd_target_coat_weight_gsm,meta,g/m2,표준편차: 캘린더링 전 코팅중량 실측 산포 (원본 헤더는 'Target coating weight'이지만 목표값의 편차가 아님),"Intermediate measurements during calendering.xlsx, Cathode 시트 표준편차 블록"
+wmg_conditions_18.csv,sd_precal_thickness_sheet_um,meta,um,표준편차: 캘린더링 전 코팅 시트에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_precal_thickness_discs_um,meta,um,표준편차: 캘린더링 전 펀칭한 디스크에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_precal_coat_weight_gsm,meta,g/m2,표준편차: 캘린더링 전 디스크 실측 코팅중량 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_precal_density_g_cm3,meta,g/cm3,표준편차: 캘린더링 전 디스크 실측 전극 밀도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_precal_porosity_pct,meta,%,표준편차: 캘린더링 전 디스크 실측 공극률 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_precal_tensile_strength_kpa,meta,kPa,표준편차: 캘린더링 전 전극 최대 인장강도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_thickness_sheet_um,meta,um,표준편차: 캘린더링 후 코팅 시트에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_thickness_discs_um,meta,um,표준편차: 캘린더링 후 펀칭한 디스크에서 측정한 코팅 두께 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_coat_weight_gsm,meta,g/m2,표준편차: 캘린더링 후 디스크 실측 코팅중량 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_density_g_cm3,meta,g/cm3,표준편차: 캘린더링 후 디스크 실측 전극 밀도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_porosity_pct,meta,%,표준편차: 캘린더링 후 디스크 실측 공극률 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_conditions_18.csv,sd_cal_tensile_strength_kpa,meta,kPa,표준편차: 캘린더링 후 전극 최대 인장강도 (조건당 반복 측정 요약),"Intermediate measurements during calendering.xlsx, Cathode 시트"
+wmg_rate_long.csv,group,id,-,조건 번호 1~18,-
+wmg_rate_long.csv,electrode_id,id,-,전극 조건 ID,-
+wmg_rate_long.csv,cell_id,id,-,하프셀 번호,-
+wmg_rate_long.csv,replicate,id,-,반복 셀 번호 1~3,-
+wmg_rate_long.csv,step,id,-,레이트 시험 스텝 순번 1~12,Group 시트 행 순서
+wmg_rate_long.csv,discharge_c_rate,X_design,-,해당 스텝의 방전 C-rate,행 라벨
+wmg_rate_long.csv,charge_c_rate,X_design,-,해당 스텝의 충전 C-rate (8~12스텝은 항상 C/5),행 라벨
+wmg_rate_long.csv,cap_dis_mah,y,mAh,방전용량,Capacity Discharge (mAh)
+wmg_rate_long.csv,cap_chg_mah,y,mAh,충전용량,Capacity Charge (mAh)
+wmg_rate_long.csv,grav_dis_mahg,y,mAh/g,그램당 방전용량,Gravimetric Discharge Capacity (mAh/g)
+wmg_rate_long.csv,grav_chg_mahg,y,mAh/g,그램당 충전용량,Gravimetric Charge Capacity (mAh/g)
+wmg_rate_long.csv,vol_dis_mahcm3,y,mAh/cm3,부피당 방전용량,Volumetric Discharge Capacity (mAh/cm3)
+wmg_rate_long.csv,vol_chg_mahcm3,y,mAh/cm3,부피당 충전용량,Volumetric Charge Capacity (mAh/cm3)
+wmg_asi_long.csv,group,id,-,조건 번호 1~18,-
+wmg_asi_long.csv,electrode_id,id,-,전극 조건 ID,-
+wmg_asi_long.csv,cell_id,id,-,하프셀 번호,-
+wmg_asi_long.csv,replicate,id,-,반복 셀 번호 1~3,-
+wmg_asi_long.csv,soc_fraction,X_design,-,원본 행 라벨 0.9~0.1 (충전/방전 진행 상태 분율). 원본에 SOC/DOD 정의 명시 없음,ASI 섹션 행 라벨
+wmg_asi_long.csv,occurrence,id,-,"같은 라벨의 등장 순번. 1=0.9~0.1 스윕, 2=원본에 설명 없는 0.5/0.2 재측정",행 중복 구분자
+wmg_asi_long.csv,asi_chg_ohmcm2,y,Ohm cm2,충전 면적비저항,ASI Charge (Ohm cm2)
+wmg_asi_long.csv,asi_dis_ohmcm2,y,Ohm cm2,방전 면적비저항,ASI Discharge (Ohm cm2)
+wmg_cycling_long.csv,group,id,-,조건 번호 1~18,Group 행
+wmg_cycling_long.csv,cell_id,id,-,하프셀 번호,Cell ID 행
+wmg_cycling_long.csv,cycle,id,회,사이클 번호 0~51,A열/B열 사이클 인덱스
+wmg_cycling_long.csv,discharge_c_rate,X_design,-,"방전 C-rate. cycle 0과 51은 C/10, 1~50은 C/2",C rate for discharge
+wmg_cycling_long.csv,cap_dis_mah,y,mAh,해당 사이클 방전용량,Discharge capacity (mAh)
+wmg_cycling_long.csv,cap_chg_mah,y,mAh,해당 사이클 충전용량. 충전은 C/5 (cycle 0은 원본 결측),Charge capacity (mAh)
+wmg_cycling_long.csv,retention_pct,y,%,1사이클(C/2) 대비 용량유지율. cycle 1~50만 존재,Capacity retention (%)
+wmg_cycling_long.csv,coulombic_eff_pct,y,%,쿨롱효율 = 방전용량/충전용량 x 100. cycle 1~50만 존재,Coulombic effieciency (%)
